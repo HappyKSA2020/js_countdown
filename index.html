@@ -19,7 +19,7 @@ p {
 var nowd = new Date();
 var countDownDate = new Date(2023, 3,
                 14,10 ,
-                55, 0).getTime() + nowd.getTimezoneOffset() * 60000;
+                55, 0).getTime() - nowd.getTimezoneOffset() * 60000;
 
 // Update the count down every 1 second
 var x = setInterval(function() {
